@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" style="height: 50px;"> <!-- Adjust the logo size -->
+        </a>
+        <!-- Navbar toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+    <!-- Lexend -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+
+        /* Full bleed header */
+        .header {
+            background-color: #0E62AD;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .header img {
+            width: 400px;
+            margin-bottom: 20px;
+        }
+        .header p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Context Section styling */
+        .context h2 {
+            color: #0E62AD;
+        }
+
+        /* Smaller text for Context section */
+        .left-section {
+            font-size: 0.9rem; 
+            margin-top: 50px;
+        }
+
+        .text-primary-custom {
+            color: #0E62AD;
+        }
+
+        /* Section title style - How?*/
+        .section-title {
+            font-size: 2.5rem;
+            color: #0E62AD; 
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .step-icon {
+            width: 150px;
+            height: auto;
+        }
+
+        .step-text {
+            color: #16B4F9; 
+            font-size: 1.5rem; 
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        /* Smaller text for step numbers */
+        .step-number {
+            font-family: 'Lexend Tera', sans-serif;
+            font-size: 1rem; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color: #0E62AD;
+        }
+
+        /* Blue line separator */
+        .separator-line {
+            border-top: 2px solid #0E62AD;
+            height: 1px;
+            width: 100%;
+            margin: auto 0;
+        }
+
+        .separator-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .step-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Problem statement styling */
+        .problem-statement-box {
+            background-color: #0E62AD;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Problem statement title */
+        .problem-statement-title {
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .problem-statement {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .research-paragraph {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header text-center">
+        <div class="container">
+            <img src="images/Out-N-About - logo.png" class="img-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <p>An interactive app that can be individualized based on location and children’s interests, while gamifying the experiences to motivate families to get more out of what their communities have to offer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Context Section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-lg-3 left-section">
+                <ul class="list-unstyled">
+                    <li><strong>Timeline:</strong> <span class="text-primary-custom">3 weeks</span></li>
+                    <li><strong>Project Type:</strong> <span class="text-primary-custom">Fictitious group project</span></li>
+                    <li><strong>Mr Role(s):</strong> <span class="text-primary-custom">Designer, Researcher</span></li>
+                    <li><strong>Tools:</strong> <span class="text-primary-custom">Adobe Illustrator, Figma</span></li>
+                    <li><strong>Skills:</strong> <span class="text-primary-custom">UI/UX Design, User Research</span></li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-lg-5">
+                <h2 class="text-primary-custom">Context</h2>
+                <p>
+                    Out n’ About is a family activities app that primarily suggests activities geared towards your child’s interests and reviews. 
+                    This app was researched and developed in just 3 weeks with my partner Brooke Williams, 
+                    we were classmates in the Ohio State University U/UX Boot Camp course.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- How? Section -->
+    <div class="container text-center mt-5">
+        <h2 class="section-title">How?</h2>
+        <div class="row justify-content-center">
+            <!-- Step 1: Research -->
+            <div class="col-md-3">
+                <img src="images/Case-Study-_ONB-ear.png"  class="step-icon">
+                <p class="step-number">Step 1</p>
+                <p class="step-text">Research</p>
+            </div>
+
+            <!-- Step 2: Design -->
+            <div class="col-md-3">
+                <img src="images/Case-Study-_ONB-Bulb.png" class="step-icon">
+                <p class="step-number">Step 2</p>
+                <p class="step-text">Design</p>
+            </div>
+
+            <!-- Step 3: Test -->
+            <div class="col-md-3">
+                <img src="images/Case-Study-_ONB-Line N Box.png" class="step-icon">
+                <p class="step-number">Step 3</p>
+                <p class="step-text">Test</p>
+            </div>
+
+            <!-- Step 4: Prototype -->
+            <div class="col-md-3">
+                <img src="images/Case-Study-iPhone.png" class="step-icon">
+                <p class="step-number">Step 4</p>
+                <p class="step-text">Prototype</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Separator - Research -->
+    <div class="container mt-5">
+        <div class="row step-row">
+            <!-- Blue line on the left -->
+            <div class="col-md-2">
+                <div class="separator-line"></div>
+            </div>
+            <div class="col-md-4 separator-content">
+                <img src="images/Case-Study-_ONB-ear.png" class="step-icon">
+                <div>
+                    <p class="step-number">STEP 1</p>
+                    <p class="step-text">Research</p>
+                </div>
+            </div>
+            <!-- Blue line on the right -->
+            <div class="col-md-2">
+                <div class="separator-line"></div>
+            </div>
+        </div>
+        
+<!-- Problem Statement in Box -->
+<div class="problem-statement-box">
+    <h3 class="problem-statement-title">Problem Statement</h3>
+    <p class="problem-statement">
+        Young parents need help finding local and interesting activities to bond and enrich their child.
+    </p>
+</div>
+
+<div class="research-paragraph mt-5 mb-5" style="max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+    <p>
+        Our research was conducted through interviewing parents with younger children, primarily 2-8 years old. 
+        We collaborated and settled on three key points to give the best understanding of how parents entertain their children; 
+        what does their typical enrichment time look like, what do parents look for in activities and if they are social 
+        with other parents/families they see also participating in the activities.
+    </p>
+    <p>
+        In these interviews, we concluded our third point of research was deflected. Parents do not seek out socializing 
+        in these circumstances; they simply want to see their child have fun.
+    </p>
+</div>
+
+<div class="text-center mb-5">
+    <img src="images/Questions-ONA.png" class="img-fluid" style="max-width: 800px; width: 100%;">
+</div>
+<div class="text-center mt-5">
+    <h1 style="font-weight: 100; font-size: 3rem; color: #16B4F9;">Marcus Williams</h1>
+    <p style="font-size: 1.2rem; color: #16B4F9;">(33 years old)</p>
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-start">
+        <div class="col-md-6">
+            <img src="images/Marcus.png" class="img-fluid" style="max-width: 300px;">
+        </div>
+<div class="col-md-6" style="text-align: left;">
+    <h3 style="color: #0E62AD; font-weight: bold; margin-top: 1.5rem;">About</h3>
+    <p style="line-height: 1.4; font-size: 1rem; margin-bottom: 0.8rem;">
+        A father of 2 children, one boy of 4 and a girl of 6. He and his wife Kelly spend a lot of time with their children outdoors 
+        but can’t always surprise their kids with new adventures. So they turn to friends hoping to find something new for their 
+        family to do together. It can be difficult with each of them having such contrasting interests.
+    </p>
+    <h3 style="color: #0E62AD; font-weight: bold; margin-top: 1.5rem;">Goals</h3>
+    <p style="line-height: 1.4; font-size: 1rem;">
+        Marcus and Kelly want to be able to access first-hand accounts on local activities in their area to both satisfy and enrich their children 
+        without having to risk spending too much money or time on the small things. In all to relieve stress and enjoy new places!
+    </p>
+</div>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <h4 style="color: #0E62AD; font-weight: bold;">Challenges</h4>
+            <ul style="line-height: 1.6; list-style-type: none; padding-left: 0;">
+                <li>Balancing interests of different children</li>
+                <li>Budgeting time and money</li>
+                <li>Researching can have broad reviews</li>
+                <li>Kids can drop interests quickly</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h4 style="color: #0E62AD; font-weight: bold;">Motivations</h4>
+            <ul style="line-height: 1.6; list-style-type: none; padding-left: 0;">
+                <li>Having their children try new things</li>
+                <li>Unlocking future interests</li>
+                <li>Staying away from screens</li>
+                <li>Education/enrichment</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h4 style="color: #0E62AD; font-weight: bold;">Preferred Platforms</h4>
+            <ul style="line-height: 1.6; list-style-type: none; padding-left: 0;">
+                <li>Google</li>
+                <li>Church Bulletin</li>
+                <li>Newsletters</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Solution Statement -->
+<div class="problem-statement-box" style="background-color: #16B4F9; color: white; padding: 20px; border-radius: 0px;">
+    <h3 class="problem-statement-title" style="color: white;">Our Solution</h3>
+    <p class="problem-statement" style="color: white;">
+        Create an engaging platform for parents and families alike to find enriching outdoor activities for the whole family to enjoy.
+    </p>
+</div>
+
+
+    <!-- Section Separator - Design  -->
+    <div class="container mt-5">
+        <div class="row step-row">
+            <!-- Blue line - left -->
+            <div class="col-md-2">
+                <div class="separator-line"></div>
+            </div>
+            <div class="col-md-4 separator-content">
+                <img src="images/Case-Study-_ONB-Bulb.png" class="step-icon">
+                <div>
+                    <p class="step-number">STEP 2</p>
+                    <p class="step-text">Design</p>
+                </div>
+            </div>
+
+            <!-- Blue line - right -->
+            <div class="col-md-2">
+                <div class="separator-line"></div>
+            </div>
+        </div>
+<!-- Competitors Analysis Section -->
+<div class="container mt-5">
+    <h3 style="color: #0E62AD; font-weight: bold; text-align: center;">Competitors Analysis</h3>
+    
+    <div class="text-center mt-3">
+        <img src="images/Comp Analysis.png" alt="Competitors Analysis" class="img-fluid" style="max-width: 800px; width: 100%;">
+    </div>
+</div>
+<div class="container mt-5 d-flex flex-column align-items-center justify-content-center">
+    <h3 style="color: #0E62AD; font-weight: bold; text-align: center;">We turned their weaknesses into our features!</h3>
+
+    <!-- Features List -->
+    <div class="mt-4">
+        <!-- Feature 1-->
+        <div class="d-flex align-items-center mb-4" style="justify-content: flex-start;">
+            <div class="d-flex align-items-center" style="width: 400px;"> 
+                <img src="images/ribbon.png" class="img-fluid" style="max-width: 100px; margin-right: 15px;">
+                <p style="color: #16B4F9; font-size: 2rem; font-weight: 100; margin: 0; white-space: nowrap;">customized profile</p>
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="d-flex align-items-center mb-4" style="justify-content: flex-start;">
+            <div class="d-flex align-items-center" style="width: 400px;">
+                <img src="images/levels.png" class="img-fluid" style="max-width: 100px; margin-right: 15px;">
+                <p style="color: #16B4F9; font-size: 2rem; font-weight: 100; margin: 0; white-space: nowrap;">unlockable achievements</p>
+            </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="d-flex align-items-center mb-4" style="justify-content: flex-start;">
+            <div class="d-flex align-items-center" style="width: 400px;"> 
+                <img src="images/lego.png" class="img-fluid" style="max-width: 100px; margin-right: 15px;">
+                <p style="color: #16B4F9; font-size: 2rem; font-weight: 100; margin: 0; white-space: nowrap;">kids reviews alongside adults</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- User Flow Section -->
+<div class="container mt-5">
+    <h3 style="color: #0E62AD; font-weight: bold; text-align: center;">User Flow</h3>
+    <div class="text-center mt-3">
+        <img src="images/userflow.png" class="img-fluid" style="max-width: 800px; width: 100%;">
+    </div>
+</div>
+
+<!-- Sketches to Mid-Fidelity Section -->
+<div class="container mt-5">
+    <h3 style="color: #0E62AD; font-weight: bold; text-align: center;">Sketches to Mid-Fidelity</h3>
+    
+    <div class="row justify-content-center mt-4">
+        <!-- Survey -->
+        <div class="col-3 d-flex flex-column align-items-center">
+            <div class="hover-effect">
+                <img src="images/Case-Study-Mocks-01.png" class="img-fluid sketch-img">
+                <img src="images/Case-Study-Mocks-05.png" class="img-fluid wireframe-img">
+            </div>
+            <p style="text-align: center; color: #0E62AD; margin-top: 10px;">survey</p>
+        </div>
+
+        <!-- Achievements -->
+        <div class="col-3 d-flex flex-column align-items-center">
+            <div class="hover-effect">
+                <img src="images/Case-Study-Mocks-02.png"  class="img-fluid sketch-img">
+                <img src="images/Case-Study-Mocks-06.png"  class="img-fluid wireframe-img">
+            </div>
+            <p style="text-align: center; color: #0E62AD; margin-top: 10px;">achievements</p>
+        </div>
+
+        <!-- My Child -->
+        <div class="col-3 d-flex flex-column align-items-center">
+            <div class="hover-effect">
+                <img src="images/Case-Study-Mocks-03.png"  class="img-fluid sketch-img">
+                <img src="images/Case-Study-Mocks-07.png"  class="img-fluid wireframe-img">
+            </div>
+            <p style="text-align: center; color: #0E62AD; margin-top: 10px;">my children</p>
+        </div>
+
+        <!-- Activity Page -->
+        <div class="col-3 d-flex flex-column align-items-center">
+            <div class="hover-effect">
+                <img src="images/Case-Study-Mocks-04.png"  class="img-fluid sketch-img">
+                <img src="images/Case-Study-Mocks-08.png"  class="img-fluid wireframe-img">
+            </div>
+            <p style="text-align: center; color: #0E62AD; margin-top: 10px;">activities</p>
+        </div>
+    </div>
+</div>
+
+ <div class="container mt-5">
+    <div class="row step-row">
+        <!-- Blue line left -->
+        <div class="col-md-2">
+            <div class="separator-line"></div>
+        </div>
+
+        <div class="col-md-4 separator-content">
+            <img src="images/Case-Study-_ONB-Line N Box.png" class="step-icon">
+            <div>
+                <p class="step-number">STEP 3</p>
+                <p class="step-text">Test</p>
+            </div>
+        </div>
+
+        <!-- Blue line right -->
+        <div class="col-md-2">
+            <div class="separator-line"></div>
+        </div>
+    </div>
+
+<div class="container mt-5 d-flex flex-column align-items-center justify-content-center">
+    <h3 style="color: #0E62AD; font-weight: bold; text-align: center;">Testing Highlights</h3>
+
+    <!-- Features List -->
+    <div class="mt-4">
+        <div class="d-flex align-items-center mb-4" style="justify-content: flex-start;">
+            <div class="d-flex align-items-center" style="width: 600px;"> 
+                <img src="images/circle-Check.png" class="img-fluid" style="max-width: 50px; margin-right: 15px;">
+                <p style="color: #16B4F9; font-size: 1.77rem; font-weight: 100; margin: 0; white-space: nowrap;">navigation was intuitive and natural 
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-4" style="justify-content: flex-start;">
+            <div class="d-flex align-items-center" style="width: 400px;">
+                <img src="images/circle-Check.png" class="img-fluid" style="max-width: 50px; margin-right: 15px;">
+                <p style="color: #16B4F9; font-size: 1.77rem; font-weight: 100; margin: 0; white-space: nowrap;">onboarding was engaging </p>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-4" style="justify-content: flex-start;">
+            <div class="d-flex align-items-center" style="width: 400px;"> 
+                <img src="images/circle-Check.png" class="img-fluid" style="max-width: 50px; margin-right: 15px;">
+                <p style="color: #16B4F9; font-size: 1.77rem; font-weight: 100; margin: 0; white-space: nowrap;">advanced search option was useful
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Section Separator - Protoype -->
+<div class="container mt-5">
+    <div class="row step-row">
+        <!-- Blue line on the left -->
+        <div class="col-md-2">
+            <div class="separator-line"></div>
+        </div>
+
+        <!-- Icon and Text (Step 4) -->
+        <div class="col-md-4 d-flex align-items-center">
+            <img src="images/Case-Study-iPhone.png" class="step-icon">
+            <div class="ms-3">
+                <p class="step-number" style="text-align: left;">STEP 4</p>
+                <p class="step-text" style="text-align: left;">Prototype</p>
+            </div>
+        </div>
+
+        <!-- Blue line on the right -->
+        <div class="col-md-2">
+            <div class="separator-line"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Prototype Image-->
+<div class="container text-center mt-5" style="margin-bottom: 80px;">
+    <img src="images/Mock-up-Phones.png" alt="Mockup Phones" class="img-fluid" style="max-width: 800px; width: 100%;">
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="contact-info">
+            <p>555-555-5555</p>
+            <p><a href="mailto:aaron@agoldweb.com">aaron@agoldweb.com</a></p>
+        </div>
+        <p>&copy; Aaron Goldweber All Rights Reserved</p>
+    </div>
+</footer>

@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section h1 {
+    color: #007bff;
+}
+
+.section p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    background-color: #ff00ff;
+    margin-bottom: 20px;
+}
+
+.context {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.context ul {
+    list-style: none;
+    padding: 0;
+}
+
+.context li {
+    margin-bottom: 10px;
+}
+
+.how-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.how-section div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.image-placeholder {
+    background-color: #ff00ff;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.challenges {
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.competitive-analysis {
+    margin: 50px 0;
+}
+
+.image-long {
+    width: 100%;
+    height: 200px;
+    background-color: #ff00ff;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #007bff;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .context, .how-section {
+        flex-direction: column;
+    }
+
+    .how-section div {
+        margin-bottom: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Hover protoype styling */
+.hover-effect {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.sketch-img,
+.wireframe-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    object-fit: cover;
+}
+
+.wireframe-img {
+    opacity: 0;
+}
+
+.hover-effect:hover .wireframe-img {
+    opacity: 1;
+}
+
+.hover-effect:hover .sketch-img {
+    opacity: 0; 
+}
+
+/* Blue line separator */
+.separator-line {
+    border-top: 2px solid #0E62AD;
+    height: 1px;
+    width: 150%;
+    margin: auto 0;
+}
+
+.separator-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-icon {
+    width: 50px;
+    height: auto;
+}
+
+/* Blue text - steps */
+.step-text {
+    color: #16B4F9;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+/* Smaller text - step numbers */
+.step-number {
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 1rem;
+    color: #16B4F9; 
+    text-transform: uppercase;
+    margin-bottom: px;
+    text-align: left; 
+}
+/* Navigation Bar Styles */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    position: fixed; /* Fix the navbar to the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Logo Styling */
+.logo img {
+    height: 30px; /* Adjust the size of the logo */
+}
+
+/* Navbar Links */
+.navigation nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navigation nav ul li {
+    display: inline-block;
+}
+
+.navigation nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+.navigation nav ul li a:hover {
+    color: #007bff; /* Change to the desired hover color */
+}
+
+/* Responsive: Stack the navbar items on small screens */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation nav ul li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+}
+
+footer {
+    background-color: #373738;
+    color: #8b8b8b;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the list items */
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #e98142;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+}
