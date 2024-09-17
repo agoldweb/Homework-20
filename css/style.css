@@ -180,17 +180,17 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #f8f9fa; /* Light background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-    position: fixed; /* Fix the navbar to the top */
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Ensure it's on top of other content */
+    z-index: 1000;
 }
 
 /* Logo Styling */
 .logo img {
-    height: 30px; /* Adjust the size of the logo */
+    height: 30px;
 }
 
 /* Navbar Links */
@@ -199,7 +199,7 @@ footer {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 20px;
 }
 
 .navigation nav ul li {
@@ -215,7 +215,7 @@ footer {
 
 /* Change color on hover */
 .navigation nav ul li a:hover {
-    color: #007bff; /* Change to the desired hover color */
+    color: #007bff; 
 }
 
 /* Responsive: Stack the navbar items on small screens */
@@ -256,7 +256,7 @@ footer {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 30px; /* Space between the list items */
+    gap: 30px;
 }
 
 .footer-links li {
